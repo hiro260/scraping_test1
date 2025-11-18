@@ -32,6 +32,9 @@ for dat in jsondata['list']:
     #print(f"JST: {jst}, weather: {weather}, temp: {temp}")
     df.loc[jst] = temp
 
+
+print(df.describe())
+
 print(df)
 df.plot(figsize=(15,8))
 plt.ylim(-10,40)
